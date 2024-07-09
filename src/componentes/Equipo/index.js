@@ -6,7 +6,7 @@ const Equipo = (props) => {
     
     //Destructuracion
     const {colorPrimario, colorSecundario, titulo, id} = props.datos
-    const {colaboradores, eliminarColaborador, actualizarColor} = props
+    const {colaboradores, eliminarColaborador, actualizarColor, like} = props
 
 
     const obj = {
@@ -38,6 +38,7 @@ const Equipo = (props) => {
                             key={index} 
                             colorPrimario={colorPrimario}
                             eliminarColaborador={eliminarColaborador}
+                            like={like}
                         />) //el index es la posicion de cada elemento, cada uno tiene su propia key
                     }
                 </div>
